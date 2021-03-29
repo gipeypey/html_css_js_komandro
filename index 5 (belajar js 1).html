@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Belajar Var  -->
+<!-- object di js itu mirip array -->
+    <script>
+        // liat di console inspect elemen
+        let kata = "Hello World" //=> hello world
+        var welcome = "Hello" //=> hello world
+        const satuan = 12 //=> hello world
+        const koma = 12.5 //=> hello world
+    </script>
+
+    <script>
+        // console.log mirip System.out.println
+        // hoisting, var x auto arrange keatas supaya x bisa ngebaca. agar menyusun syntax nya
+        x = 10
+        var x
+        console.log(x) //=> 10  
+    </script>
+
+    <script>
+        // variabel dalam scope itu private dan tidak bisa dibaca scope lain
+        // var b = 2 => itu variabel global
+        // var b = 3 => itu variabel scope (didalam scope soalnya)
+        var a = 2
+        if (true) {
+        var a = 3
+        }
+        console.log(a) // => 3
+    </script>
+
+    <script>
+        // pake function supaya var b=3, itu tidak kepanggil di console.log
+        // kalo mau ambil var di luar scope, maka diakalin pake scope
+        var b = 2
+        function myScope() {
+            var b = 3
+        }
+        myScope()
+        console.log(b) // => 2
+    </script>
+
+    <script>
+        // Problem 3: 
+        // kalo mau panggil didalam function, maka pake kurung di function nya
+        var c = 2;
+        (function () {
+            var d = 3
+            console.log(e);
+        }) ()
+        console.log(c);
+    </script>
+    
+    <script>
+        // Problem 4: Lupa deklarasi var = global
+        // jangan sampai kena global variabel
+        (function(){
+            f=3
+        })()
+        console.log(g)
+    </script>
+
+<!-- Belajar Let -->
+    <script>
+        // problem 1 : Reassign
+        // jangan sampe ada method yg sama
+        let foo ='hello1'
+        let foo ='hello2' 
+        console.log(foo)    //=> TypeError: Duplicate declaration "foo"
+    </script>
+    <script>
+        // Problem 2 : Hoisting
+        // kalo let harus berurutan kaya java language (leh h, h=10)
+        h=10
+        let h
+        console.log(h) //=> ReferenceError: x is not defined
+    </script>
+    <script>
+        // Problem 3 : Scope
+        // let adalah block scope, tidak perlllu menambahkan function
+        let i=2
+        if (true){
+        let i=3
+        }
+        console.log(i) //=> 2
+    </script>
+
+<!-- Belajar Const -->
+    <script>
+        // constanta yang tidak bisa diubah
+        const KEY=123
+        KEY = 456 //=> TypeError: Assignment to constant variable.
+        const KEY=123
+        var KEY = 456 //=> TypeError: Assignment to constant variable.
+    </script>
+
+<!-- Perkenalan  diri-->
+    <script type="text/javascript" src="External JS/external js.js">
+    // pake external js yaitu mnambahkan attribute src
+    </script>
+
+<!-- asd -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>

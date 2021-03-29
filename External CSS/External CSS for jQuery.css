@@ -1,0 +1,20 @@
+.container {
+    margin: 30px;
+    text-align: center;
+    background: #81ecec;
+    border: solid 0.5px;
+    border-radius: 7px;
+    height: 120px;
+    display: none;
+    font-family: sans-serif;
+    }
+    
+.btn {
+    text-align: center;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 7px;
+    background-color: #74b9ff;
+    box-shadow: 1px 1px 2.5px gray;
+    font-family: sans-serif;
+    }

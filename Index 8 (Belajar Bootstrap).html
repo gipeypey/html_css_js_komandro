@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery, Popper, Bootstrap (Js) -->
+    <script type="text/javascript" src="External JS/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+
+    <!-- Grid System -->
+    <!-- Container -->
+    <!-- Digunakan untuk memberikan margin kanan dan kiri -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header class="text-center my-4">
+                    <h1 class="text-secondary text-uppercase">Responsive Break Point</h1>
+                </header>
+            </div>
+        </div>
+        <!-- Device PC -->
+        <div class="row mb-5">
+            <div class="col-xl" style="border: 1px solid #333;">Home (PC)</div>
+            <div class="col-xl" style="border: 1px solid #333;">About (PC)</div>
+            <div class="col-xl" style="border: 1px solid #333;">Login (PC)</div>
+        </div>
+        <!-- Device Tablet -->
+        <div class="row mb-5">
+            <div class="col-md" style="border: 1px solid #333;">Home (Tab)</div>
+            <div class="col-md" style="border: 1px solid #333;">About (Tab)</div>
+            <div class="col-md" style="border: 1px solid #333;">Login (Tab)</div>
+        </div>
+        <!-- Device Mobile -->
+        <div class="row mb-5">
+            <div class="col-sm" style="border: 1px solid #333;">Home (Mobile)</div>
+            <div class="col-sm" style="border: 1px solid #333;">About (Mobile)</div>
+            <div class="col-sm" style="border: 1px solid #333;">Login (Mobile)</div>
+        </div>
+        <!-- Note : maksimal column 12 -->
+        <div class="row mb-5">
+            <div class="col-md-5" style="border: 1px solid #333;">Home (Tab)</div>
+            <div class="col-md-2" style="border: 1px solid #333;">About (Tab)</div>
+            <div class="col-md-4" style="border: 1px solid #333;">Login (Tab)</div>
+        </div>
+        <!-- untuk mengurutkan dari class bisa menugurutkan -->
+        <div class="row mb-5">
+            <div class="col order-2" style="border: 1px solid #333;">col 69</div>
+            <div class="col order-1" style="border: 1px solid #333;">col 99</div>
+            <div class="col order-3" style="border: 1px solid #333;">col 3</div>
+        </div>
+
+        <!-- Isi disini untuk row selanjutnya -->
+    </div>
+
+    <!-- Margin -->
+    <div class="row mt-5">
+        <div class="col" style="border: 3px solid lightgreen">
+            <h5>Margin Bottom, </h5>
+            <h1 class="mb-0 bg-dark">Margin Bottom 0, black</h1>
+            <h1 class="mb-1 bg-alert">Margin Bottom 1, white</h1>
+            <h1 class="mb-2 bg-light">Margin Bottom 2, grey</h1>
+            <h1 class="mb-3 bg-danger">Margin Bottom 3, red</h1>
+            <h1 class="mb-4 bg-warning">Margin Bottom 4, orange</h1>
+            <h1 class="mb-5 bg-warning">Margin Bottom 5</h1>
+        </div>
+     </div>
+
+    <!-- Padding,  -->
+    <div class="row mt-5">
+        <div class="col" style="border: 3px solid lightgreen">
+            <h5>Padding Bottom, </h5>
+            <h1 class="p-0 bg-dark">Margin Bottom 0, black</h1>
+            <h1 class="pb-1 bg-alert">Margin Bottom 1, white</h1>
+            <h1 class="pb-2 bg-light">Margin Bottom 2, grey</h1>
+            <h1 class="pb-3 bg-danger">Margin Bottom 3, red</h1>
+            <h1 class="pb-4 bg-warning">Margin Bottom 4, orange</h1>
+            <h1 class="pb-5 bg-warning">Margin Bottom 5</h1>
+        </div>
+     </div>
+    
+     <div class="row mt-5">
+        <div class="col" style="border: 3px solid lightgrey;">
+        <h5>Margin Left & Right (sumbu-x)</h5>
+        <p>Lorem ipsum <span class="mx-5 bg-success">
+           Margin Left & Right 5</span>, consectetur elit. 
+           Voluptatum, option.
+        </p>
+        <br>
+        <hr>
+        <h5>Margin Top & Bottom (sumbu-y)</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur elit. 
+           Voluptatum, optio.
+        </p>
+        <p class="my-5 bg-success">Margin Top & Bottom 5</p>
+        <p>Lorem ipsum dolor sit amet, consectetur elit. 
+           Voluptatum, optio.
+        </p>
+        </div>
+     </div>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar CSS 1</title>
+    <style type="text/css">
+        @import "external css.css";
+    </style>
+    <link rel="stylesheet" type = "text/css" href="external css.css">
+</head>
+<body>
+
+     <!-- input gambar menggunakan tag img (src untuk halaman dan gambar)  -->
+     <img src="img/Logo RealRich Company 2.3.png" alt="rr 2.3" width="150" height="20" >
+     <br><br>
+ 
+     <!-- input link dari luar atau halaman pakai tag a href (href untuk manggil halaman) -->
+     <a href="index 2.html" target="_blank">Halaman 2</a>
+     <br>
+ 
+     <!-- Inline CSS ada di tagnya, identik dengan style(color, fontfamily, font size) -->
+     <!-- untuk lebih responsive pake satuan rem, em, %. kalo px kurang responsive -->
+     <p style="color: brown; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2rem;">LATIHAN CSS 1</p>
+     <br>
+ 
+     <!-- internal CSS dari bagian tag head -->
+     <h1>Menggunakan Internal CSS</h1>
+ 
+     <!-- external CSS dari luar dengan file .css yaitu dari tag style di tulis @import atau tag link -->
+     <!-- 1. inline, 2. internal, 3. external CSS -->
+     <h6 href= "external.css" style="text-align: center;">Menggunakan External CSS</h6>
+ 
+     <!-- menggunakan selector class (class = "nama" hbs itu di .css pake .nama) -->
+     <h4 class="text1">Menggunakan external CSS (Selector Class)</h4>
+ 
+     <!-- selector id itu unik, hanya bisa dipakai satu tag element html -->
+     <h4 id="container">Menggunakan External CSS (Selector ID)</h4>
+ 
+     <!-- selector tag -->
+     <h5>Keempat, membahas tentang selector ID</h1>
+     <input type="password" placeholder="Password" />
+     <br><br>
+     <input type="text" placeholder="nama kamu" />
+ 
+     <!-- selector universal -->
+</body>
+</html>

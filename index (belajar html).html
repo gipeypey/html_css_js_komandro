@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Komandro CCIT-FT UI</title>
+    <script language="JavaScript">
+        var txt = "Komandro CCIT-FT UI...";
+        var kecepatan = 100;
+        var gerak = null;
+
+        function bergerak() {
+            document.title = txt;
+            txt = txt.substring(1, txt.length) + txt.charAt(0);
+            gerak = setTimeout("bergerak()", kecepatan);
+        }
+        bergerak();
+    </script>
+</head>
+
+<body id="forbackground">
+
+    <!-- fungsi style color adalah ngasih warna pada text -->
+    <h2 style="color: aquamarine; font-size: 2rem; text-align: center;">Hello World!</h1>
+
+        <!-- tag nav untuk membuat navigasi bar/dashboard atau bisa lihat nav bar medium komandro yg warna biru -->
+        <!-- untuk mengcopy bisa tulis li*3, 3 ini adalah banyaknya -->
+        <nav>
+            <p>tag ul untuk titik hitam</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+            <br>
+            <p>tag ol untuk abjad, romawi, angka, dll</p>
+
+            <!-- fungsi type adalah mengganti point menjadi abjad, romawi, angka, dll -->
+            <ol type="a">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ol>
+        </nav>
+        <br>
+        <article>
+            <h2>satu artikel bisa memuat banyak artikel</h2>
+            <section>
+                <h2>satu artikel bisa memuat banyak section</h2>
+            </section>
+        </article>
+
+        <!-- border untuk kasih line biar kelihatan table, cellpadding untuk memberikan jarak dalam tabel -->
+        <table border="1" cellpadding='10' cellspacing='1'>
+
+            <!-- fungsi thead adalah sebagai table utama kaya nama, kelas, alamat, dll (akan ngebold) -->
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+
+            <!-- fungsi tbody adalah sebagai isi dari table tersebut diikuti oleh tr(1baris) -->
+            <tbody>
+                <tr style="color: blueviolet">
+                    <td>1.</td>
+                    <td>Mangskuy</td>
+                    <td>1CC-3</td>
+                </tr>
+                <tr style="color: cadetblue">
+                    <td>2.</td>
+                    <td>Afif</td>
+                    <td>1CC-5</td>
+                </tr>
+                <tr style="color: chartreuse">
+                    <td>3.</td>
+                    <td>Deano</td>
+                    <td>1CC-5</td>
+                </tr>
+            </tbody>
+
+            <!-- fungsi tfoot adalah untuk memberikan catatan kaki ada tabel -->
+            <!-- fungsi colspan adalah untuk merge tabel ke samping -->
+            <!-- fungsi rowspan adalah untuk merge tabel ke atas/bawah -->
+            <tfoot>
+                <tr style="color: coral">
+                    <td colspan="3">Jumlah siswa hanya ada 3</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <hr>
+        <table border="1" cellpadding='10'>
+            <tr>
+                <td colspan="3">10</td>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="2">40</td>
+                <td>50</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+        </table>
+        <br>
+
+        <!-- untuk bagian pengisian apapun, pakailah elmnt form -->
+        <!-- untuk menghubungkannya pakai att id ke for label -->
+        <form action="">
+            <fieldset>
+                <label for="nama">Name:</label>
+                <input type="text" id="nama">
+                <br>
+                <label for="kelas">Class:</label>
+                <input type="text" id="kelas">
+                <br>
+                <label for="nomor">Phone Number:</label>
+                <input type="number" id="nomor">
+                <br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass">
+                <br>
+                <label for="tanggal">Date:</label>
+                <input type="date"> <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <br>
+        </form>
+        <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+hr {
+    width: 250px;
+    border-top: 3px solid #007BFF;
+}
+
+.about {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card:hover {
+    background-color: #ddd;
+}
